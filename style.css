@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f0; 
+    color: #333;
+}
+
+.container {
+    width: 100%; 
+    max-width: none; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #d0e7d0; 
+    padding: 40px; 
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 40%; 
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.hero-text {
+    width: 60%; 
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #c0d8c0;
+    margin-bottom: 20px;
+}
+
+.feature {
+    width: 30%;
+    background-color: #b0c8b0; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.feature:hover {
+    transform: translateY(-5px); 
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.feature:hover .feature-image {
+    transform: scale(1.05); 
+}
+
+.feature h3 {
+    font-size: 1.3em; 
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.feature p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #66a066; 
+    color: #fff;
+    padding: 40px; 
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Button Style */
+.button {
+    display: inline-block;
+    padding: 12px 24px; 
+    background-color: #18ca5ff8; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.1em;
+    margin-top: 30px;
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #16a56cf8; 
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
